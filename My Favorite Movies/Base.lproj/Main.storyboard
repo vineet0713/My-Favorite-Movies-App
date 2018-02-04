@@ -93,7 +93,7 @@
             </objects>
             <point key="canvasLocation" x="799" y="149"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Comedy Movies-->
         <scene sceneID="bgd-uM-4OA">
             <objects>
                 <tableViewController id="xlS-km-2Md" sceneMemberID="viewController">
@@ -102,7 +102,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="QGk-yh-yWe">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ComedyMovieCell" id="QGk-yh-yWe">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QGk-yh-yWe" id="KkY-Ln-EcO">
@@ -116,13 +116,13 @@
                             <outlet property="delegate" destination="xlS-km-2Md" id="aZU-Qx-s9j"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="64D-pV-acp"/>
+                    <navigationItem key="navigationItem" title="Comedy Movies" id="64D-pV-acp"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O3R-0Y-qFe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2695" y="567"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Favorite  Movies-->
         <scene sceneID="Swg-Nq-Wyp">
             <objects>
                 <tableViewController id="otd-2j-ADs" sceneMemberID="viewController">
@@ -131,7 +131,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="xQb-8X-e7O">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoriteMovieCell" id="xQb-8X-e7O">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xQb-8X-e7O" id="Rdd-pa-kDt">
@@ -145,7 +145,7 @@
                             <outlet property="delegate" destination="otd-2j-ADs" id="cEf-8p-5va"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="VJe-y2-jUL"/>
+                    <navigationItem key="navigationItem" title="Favorite  Movies" id="VJe-y2-jUL"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZp-Ei-vm4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -185,7 +185,7 @@
             </objects>
             <point key="canvasLocation" x="1745" y="567"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Action Movies-->
         <scene sceneID="aKb-vI-kfs">
             <objects>
                 <tableViewController id="n8B-5S-1nn" sceneMemberID="viewController">
@@ -194,7 +194,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="CsT-Ot-wfA">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActionMovieCell" id="CsT-Ot-wfA">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CsT-Ot-wfA" id="HwD-gK-ldK">
@@ -208,7 +208,7 @@
                             <outlet property="delegate" destination="n8B-5S-1nn" id="hBd-6K-2ve"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="AHG-MI-Fd4"/>
+                    <navigationItem key="navigationItem" title="Action Movies" id="AHG-MI-Fd4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OB6-Ss-Agx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -231,7 +231,7 @@
             </objects>
             <point key="canvasLocation" x="1745" y="-1146"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Sci-Fi Movies-->
         <scene sceneID="qmP-ba-83G">
             <objects>
                 <tableViewController id="D1N-HI-asl" sceneMemberID="viewController">
@@ -240,7 +240,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kMg-ph-6VW">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SciFiMovieCell" id="kMg-ph-6VW">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kMg-ph-6VW" id="zbP-Qc-juA">
@@ -254,7 +254,7 @@
                             <outlet property="delegate" destination="D1N-HI-asl" id="lyb-qZ-W6c"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="GPr-DV-GcM"/>
+                    <navigationItem key="navigationItem" title="Sci-Fi Movies" id="GPr-DV-GcM"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I6n-d4-o53" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
