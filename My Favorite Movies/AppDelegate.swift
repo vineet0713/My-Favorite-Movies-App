@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
+    // these are all things we will need when authenticating and using TMDB
     var sharedSession = URLSession.shared
     var requestToken: String? = nil
     var sessionID: String? = nil
@@ -40,7 +41,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate {
     
     func tmdbURLFromParameters(_ parameters: [String:AnyObject], withPathExtension: String? = nil) -> URL {
-        
         var components = URLComponents()
         components.scheme = Constants.TMDB.ApiScheme
         components.host = Constants.TMDB.ApiHost

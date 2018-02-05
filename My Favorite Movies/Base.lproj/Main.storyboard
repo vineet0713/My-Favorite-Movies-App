@@ -35,13 +35,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="46.5"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="username"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IE8-y3-fBD">
                                         <rect key="frame" x="0.0" y="56.5" width="343" height="47"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSy-TQ-DOQ">
                                         <rect key="frame" x="0.0" y="113.5" width="343" height="46.5"/>
@@ -66,6 +66,8 @@
                         <viewLayoutGuide key="safeArea" id="Gg7-C9-fcO"/>
                     </view>
                     <connections>
+                        <outlet property="passwordField" destination="IE8-y3-fBD" id="JVp-0V-iim"/>
+                        <outlet property="usernameField" destination="FTd-ub-qqc" id="55M-VT-7eg"/>
                         <segue destination="ZBe-Gz-rSY" kind="show" identifier="loginComplete" id="ya7-ev-oJc"/>
                     </connections>
                 </viewController>

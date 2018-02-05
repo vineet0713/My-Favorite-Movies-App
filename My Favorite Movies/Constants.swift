@@ -14,7 +14,10 @@ struct Constants {
     
     // MARK: TMDB
     struct TMDB {
-        static let ApiScheme = "http"
+        // static let ApiScheme = "http"
+        // changed to "https" for securely sending the requests with username/password information
+        // by making "https" call, we will encrypt all data that's sent from the app
+        static let ApiScheme = "https"
         static let ApiHost = "api.themoviedb.org"
         static let ApiPath = "/3"
     }
@@ -26,6 +29,7 @@ struct Constants {
         static let SessionID = "session_id"
         static let Username = "username"
         static let Password = "password"
+        static let orderedValues = [ApiKey, RequestToken, SessionID, Username, Password]
     }
     
     // MARK: TMDB Parameter Values
@@ -55,15 +59,5 @@ struct Constants {
         static let BlueColor = UIColor(red: 0.0, green:0.502, blue:0.839, alpha: 1.0)
     }
     
-    // FIX: As of Swift 2.2, using strings for selectors has been deprecated. Instead, #selector(methodName) should be used.
-    /*
-     // MARK: Selectors
-     struct Selectors {
-     static let KeyboardWillShow: Selector = "keyboardWillShow:"
-     static let KeyboardWillHide: Selector = "keyboardWillHide:"
-     static let KeyboardDidShow: Selector = "keyboardDidShow:"
-     static let KeyboardDidHide: Selector = "keyboardDidHide:"
-     }
-     */
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65008FE32027C19B0083B8E2 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65008FE22027C19B0083B8E2 /* Movie.swift */; };
+		65008FE52027C1B40083B8E2 /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65008FE42027C1B40083B8E2 /* GCDBlackBox.swift */; };
 		6503B0842026AAC80050559D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6503B0832026AAC80050559D /* LoginViewController.swift */; };
 		6503B0862026AF010050559D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6503B0852026AF010050559D /* Config.swift */; };
 		6503B08A2026AF6D0050559D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6503B0892026AF6D0050559D /* Constants.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65008FE22027C19B0083B8E2 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		65008FE42027C1B40083B8E2 /* GCDBlackBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDBlackBox.swift; sourceTree = "<group>"; };
 		6503B0832026AAC80050559D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6503B0852026AF010050559D /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		6503B0892026AF6D0050559D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 			children = (
 				65DC00AC2022A92D00F56D3E /* AppDelegate.swift */,
 				6503B0832026AAC80050559D /* LoginViewController.swift */,
+				65008FE22027C19B0083B8E2 /* Movie.swift */,
+				65008FE42027C1B40083B8E2 /* GCDBlackBox.swift */,
 				6503B0852026AF010050559D /* Config.swift */,
 				6503B0892026AF6D0050559D /* Constants.swift */,
 				65DC00B02022A92D00F56D3E /* Main.storyboard */,
@@ -269,6 +275,8 @@
 				65DC00AD2022A92D00F56D3E /* AppDelegate.swift in Sources */,
 				6503B0862026AF010050559D /* Config.swift in Sources */,
 				6503B08A2026AF6D0050559D /* Constants.swift in Sources */,
+				65008FE52027C1B40083B8E2 /* GCDBlackBox.swift in Sources */,
+				65008FE32027C19B0083B8E2 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
