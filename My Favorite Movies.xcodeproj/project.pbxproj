@@ -14,6 +14,7 @@
 		65008FF22027EF0C0083B8E2 /* SciFiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65008FF12027EF0C0083B8E2 /* SciFiTableViewController.swift */; };
 		65008FF42027EF4D0083B8E2 /* ComedyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65008FF32027EF4D0083B8E2 /* ComedyTableViewController.swift */; };
 		65008FF62027F0130083B8E2 /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65008FF52027F0130083B8E2 /* FavoriteTableViewController.swift */; };
+		65008FF82027F7A70083B8E2 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65008FF72027F7A70083B8E2 /* MovieDetailViewController.swift */; };
 		6503B0842026AAC80050559D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6503B0832026AAC80050559D /* LoginViewController.swift */; };
 		6503B0862026AF010050559D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6503B0852026AF010050559D /* Config.swift */; };
 		6503B08A2026AF6D0050559D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6503B0892026AF6D0050559D /* Constants.swift */; };
@@ -50,6 +51,7 @@
 		65008FF12027EF0C0083B8E2 /* SciFiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SciFiTableViewController.swift; sourceTree = "<group>"; };
 		65008FF32027EF4D0083B8E2 /* ComedyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComedyTableViewController.swift; sourceTree = "<group>"; };
 		65008FF52027F0130083B8E2 /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
+		65008FF72027F7A70083B8E2 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		6503B0832026AAC80050559D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6503B0852026AF010050559D /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		6503B0892026AF6D0050559D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				6503B0832026AAC80050559D /* LoginViewController.swift */,
 				65008FE72027D9FA0083B8E2 /* Table View Controllers */,
 				65008FE82027DCA50083B8E2 /* Table View Cells */,
+				65008FF72027F7A70083B8E2 /* MovieDetailViewController.swift */,
 				65008FE22027C19B0083B8E2 /* Movie.swift */,
 				65008FE42027C1B40083B8E2 /* GCDBlackBox.swift */,
 				6503B0852026AF010050559D /* Config.swift */,
@@ -306,6 +309,7 @@
 				65008FF02027E0000083B8E2 /* ActionTableViewController.swift in Sources */,
 				65DC00AD2022A92D00F56D3E /* AppDelegate.swift in Sources */,
 				65008FF22027EF0C0083B8E2 /* SciFiTableViewController.swift in Sources */,
+				65008FF82027F7A70083B8E2 /* MovieDetailViewController.swift in Sources */,
 				6503B0862026AF010050559D /* Config.swift in Sources */,
 				65008FF62027F0130083B8E2 /* FavoriteTableViewController.swift in Sources */,
 				6503B08A2026AF6D0050559D /* Constants.swift in Sources */,

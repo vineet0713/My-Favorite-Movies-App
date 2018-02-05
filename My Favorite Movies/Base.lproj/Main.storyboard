@@ -180,6 +180,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Action Movies" id="AHG-MI-Fd4"/>
+                    <connections>
+                        <segue destination="Zcw-fM-Fh8" kind="show" identifier="actionMovieDetail" id="sjN-Ly-INy"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OB6-Ss-Agx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -270,12 +273,15 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Sci-Fi Movies" id="NQK-OX-HyQ"/>
+                    <connections>
+                        <segue destination="Zcw-fM-Fh8" kind="show" identifier="scifiMovieDetail" id="oCy-xn-ks9"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DWb-ib-reo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2694" y="-316"/>
         </scene>
-        <!--Sci-Fi Movies-->
+        <!--Comedy Movies-->
         <scene sceneID="259-wq-05y">
             <objects>
                 <tableViewController id="IXJ-HO-Wy7" customClass="ComedyTableViewController" customModule="My_Favorite_Movies" customModuleProvider="target" sceneMemberID="viewController">
@@ -325,11 +331,69 @@
                             <outlet property="delegate" destination="IXJ-HO-Wy7" id="ue2-6o-z3I"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Sci-Fi Movies" id="GcY-0s-EHZ"/>
+                    <navigationItem key="navigationItem" title="Comedy Movies" id="GcY-0s-EHZ"/>
+                    <connections>
+                        <segue destination="Zcw-fM-Fh8" kind="show" identifier="comedyMovieDetail" id="Oak-Oj-Fwn"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VJ2-ys-Uj4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2694" y="566"/>
+        </scene>
+        <!--Movie Detail View Controller-->
+        <scene sceneID="Xzn-AV-eKr">
+            <objects>
+                <viewController id="Zcw-fM-Fh8" customClass="MovieDetailViewController" customModule="My_Favorite_Movies" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yHG-h9-pV8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4ie-VJ-v6g">
+                                <rect key="frame" x="0.0" y="64" width="375" height="445"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="445" id="T0n-qG-jEA"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zJk-MV-opR">
+                                <rect key="frame" x="16" y="517" width="343" height="101"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite Movie Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNn-3C-kX2">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="50.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSX-ua-H3J">
+                                        <rect key="frame" x="0.0" y="50.5" width="343" height="50.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <connections>
+                                            <action selector="modifyFavorite:" destination="Zcw-fM-Fh8" eventType="touchUpInside" id="di6-aF-A34"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zJk-MV-opR" firstAttribute="leading" secondItem="yHG-h9-pV8" secondAttribute="leadingMargin" id="AER-8d-1dH"/>
+                            <constraint firstItem="zJk-MV-opR" firstAttribute="top" secondItem="4ie-VJ-v6g" secondAttribute="bottom" constant="8" symbolic="YES" id="Aq9-ru-H3V"/>
+                            <constraint firstItem="4ie-VJ-v6g" firstAttribute="top" secondItem="glM-nu-PHZ" secondAttribute="top" id="Kh5-cZ-Uz9"/>
+                            <constraint firstItem="zJk-MV-opR" firstAttribute="bottom" secondItem="glM-nu-PHZ" secondAttribute="bottom" id="Z3q-nC-Z7H"/>
+                            <constraint firstItem="4ie-VJ-v6g" firstAttribute="leading" secondItem="yHG-h9-pV8" secondAttribute="leading" id="ad2-FH-v9o"/>
+                            <constraint firstItem="4ie-VJ-v6g" firstAttribute="centerX" secondItem="zJk-MV-opR" secondAttribute="centerX" id="pXR-u2-Tk7"/>
+                            <constraint firstAttribute="trailing" secondItem="4ie-VJ-v6g" secondAttribute="trailing" id="zSh-1F-SVq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="glM-nu-PHZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailMoviePoster" destination="4ie-VJ-v6g" id="O8g-pO-AfL"/>
+                        <outlet property="detailMovieTitle" destination="cNn-3C-kX2" id="CcA-kR-5io"/>
+                        <outlet property="favoriteButton" destination="pSX-ua-H3J" id="5vW-g3-STL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nqb-ye-hHW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3776.8000000000002" y="148.87556221889056"/>
         </scene>
         <!--Favorite Movies-->
         <scene sceneID="3CM-5p-KXQ">
@@ -382,10 +446,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Favorite Movies" id="Rrt-Fq-VE7"/>
+                    <connections>
+                        <segue destination="Zcw-fM-Fh8" kind="show" identifier="favoriteMovieDetail" id="QAS-an-mAW"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z1S-g7-a8G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2694" y="1405"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="sjN-Ly-INy"/>
+    </inferredMetricsTieBreakers>
 </document>

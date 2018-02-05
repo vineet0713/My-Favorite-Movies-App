@@ -16,11 +16,13 @@ class FavoriteTableViewController: UITableViewController {
     
     var appDelegate: AppDelegate!
     var movies: [Movie] = [Movie]()
+    var selectedMovie: Movie? = nil
     
     // MARK: Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
         
         appDelegate = UIApplication.shared.delegate as! AppDelegate
         
@@ -162,17 +164,16 @@ class FavoriteTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        selectedMovie = movies[indexPath.row]
+        performSegue(withIdentifier: "favoriteMovieDetail", sender: self)
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailViewController = segue.destination as? MovieDetailViewController {
+            detailViewController.movie = selectedMovie
+        }
+    }
     
 }
