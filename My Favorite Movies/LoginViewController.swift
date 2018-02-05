@@ -26,9 +26,8 @@ class LoginViewController: UIViewController {
     
     // MARK: Life Cycle
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         usernameField.becomeFirstResponder()
     }
@@ -107,7 +106,7 @@ class LoginViewController: UIViewController {
             }
             
             /* 6. Use the data! */
-            print("Request Token: \(requestToken)")
+            // print("Request Token: \(requestToken)")
             self.appDelegate.requestToken = requestToken
             self.loginWithToken(requestToken, username, password)
         }
@@ -221,7 +220,7 @@ class LoginViewController: UIViewController {
             }
             
             /* 6. Use the data! */
-            print("Session ID: \(sessionId)")
+            // print("Session ID: \(sessionId)")
             self.appDelegate.sessionID = sessionId
             self.getUserID(sessionId)
         }
@@ -277,7 +276,7 @@ class LoginViewController: UIViewController {
             }
             
             /* 6. Use the data! */
-            print("User ID: \(userId)")
+            // print("User ID: \(userId)")
             self.appDelegate.userID = userId
             performUIUpdatesOnMain {
                 self.completeLogin()
@@ -289,6 +288,8 @@ class LoginViewController: UIViewController {
     }
     
     func completeLogin() {
+        usernameField.text = ""
+        passwordField.text = ""
         performSegue(withIdentifier: "loginComplete", sender: self)
     }
     

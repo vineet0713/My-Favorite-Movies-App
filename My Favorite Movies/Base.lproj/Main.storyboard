@@ -95,75 +95,17 @@
             </objects>
             <point key="canvasLocation" x="799" y="149"/>
         </scene>
-        <!--Comedy Movies-->
-        <scene sceneID="bgd-uM-4OA">
-            <objects>
-                <tableViewController id="xlS-km-2Md" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vAe-O1-cgR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ComedyMovieCell" id="QGk-yh-yWe">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QGk-yh-yWe" id="KkY-Ln-EcO">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="xlS-km-2Md" id="xfb-1l-w5m"/>
-                            <outlet property="delegate" destination="xlS-km-2Md" id="aZU-Qx-s9j"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Comedy Movies" id="64D-pV-acp"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="O3R-0Y-qFe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2695" y="567"/>
-        </scene>
-        <!--Favorite  Movies-->
-        <scene sceneID="Swg-Nq-Wyp">
-            <objects>
-                <tableViewController id="otd-2j-ADs" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Lm2-qh-biJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoriteMovieCell" id="xQb-8X-e7O">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xQb-8X-e7O" id="Rdd-pa-kDt">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="otd-2j-ADs" id="FbH-Lc-Uak"/>
-                            <outlet property="delegate" destination="otd-2j-ADs" id="cEf-8p-5va"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Favorite  Movies" id="VJe-y2-jUL"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fZp-Ei-vm4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2694" y="1405"/>
-        </scene>
         <!--Favorites-->
         <scene sceneID="noX-pk-XNZ">
             <objects>
                 <navigationController id="fG7-hr-COn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Favorites" id="5qb-et-eKp"/>
+                    <tabBarItem key="tabBarItem" tag="3" title="Favorites" id="5qb-et-eKp"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4qG-tG-X1j">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="otd-2j-ADs" kind="relationship" relationship="rootViewController" id="43x-8a-vJE"/>
+                        <segue destination="sAh-ME-dWh" kind="relationship" relationship="rootViewController" id="gSR-rW-5UY"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TnA-Sx-un4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -174,13 +116,13 @@
         <scene sceneID="7YM-kl-EWB">
             <objects>
                 <navigationController id="SUI-9j-pWN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Comedy" id="Iip-qY-Hlw"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Comedy" id="Iip-qY-Hlw"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="btn-fN-LTi">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="xlS-km-2Md" kind="relationship" relationship="rootViewController" id="TPM-r1-GUD"/>
+                        <segue destination="IXJ-HO-Wy7" kind="relationship" relationship="rootViewController" id="CyR-oE-eSx"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s2C-dh-m7O" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -190,19 +132,46 @@
         <!--Action Movies-->
         <scene sceneID="aKb-vI-kfs">
             <objects>
-                <tableViewController id="n8B-5S-1nn" sceneMemberID="viewController">
+                <tableViewController id="n8B-5S-1nn" customClass="ActionTableViewController" customModule="My_Favorite_Movies" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="HQH-EY-BHu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActionMovieCell" id="CsT-Ot-wfA">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GenreMovieCell" rowHeight="200" id="CsT-Ot-wfA" customClass="GenreTableViewCell" customModule="My_Favorite_Movies" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CsT-Ot-wfA" id="HwD-gK-ldK">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="omo-rG-Oen" userLabel="Genre Movie Poster">
+                                            <rect key="frame" x="16" y="11" width="150" height="178"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="65Z-8q-Chv"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action Movie Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGs-0s-L8N">
+                                            <rect key="frame" x="174" y="11" width="185" height="178"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="omo-rG-Oen" firstAttribute="leading" secondItem="HwD-gK-ldK" secondAttribute="leadingMargin" id="26A-8M-rMb"/>
+                                        <constraint firstItem="omo-rG-Oen" firstAttribute="bottom" secondItem="HwD-gK-ldK" secondAttribute="bottomMargin" id="DZ2-VH-UIj"/>
+                                        <constraint firstItem="vGs-0s-L8N" firstAttribute="trailing" secondItem="HwD-gK-ldK" secondAttribute="trailingMargin" id="RFv-DU-pRa"/>
+                                        <constraint firstItem="omo-rG-Oen" firstAttribute="top" secondItem="vGs-0s-L8N" secondAttribute="top" id="RjN-h3-Exn"/>
+                                        <constraint firstItem="omo-rG-Oen" firstAttribute="top" secondItem="HwD-gK-ldK" secondAttribute="topMargin" id="dyk-cU-yRa"/>
+                                        <constraint firstItem="omo-rG-Oen" firstAttribute="bottom" secondItem="vGs-0s-L8N" secondAttribute="bottom" id="lGg-PX-40i"/>
+                                        <constraint firstItem="vGs-0s-L8N" firstAttribute="leading" secondItem="omo-rG-Oen" secondAttribute="trailing" constant="8" symbolic="YES" id="xYL-qy-3I2"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="genreMoviePoster" destination="omo-rG-Oen" id="yNF-9R-pLu"/>
+                                    <outlet property="genreMovieTitle" destination="vGs-0s-L8N" id="y3Z-gy-hyV"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -214,13 +183,13 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OB6-Ss-Agx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2695" y="-1146"/>
+            <point key="canvasLocation" x="2693.5999999999999" y="-1146.4767616191905"/>
         </scene>
         <!--Action-->
         <scene sceneID="bZr-Lv-XYc">
             <objects>
                 <navigationController id="GcF-V6-lkM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Action" id="arq-Vw-GXh"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="Action" id="arq-Vw-GXh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pGI-SJ-pU0">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -233,35 +202,6 @@
             </objects>
             <point key="canvasLocation" x="1745" y="-1146"/>
         </scene>
-        <!--Sci-Fi Movies-->
-        <scene sceneID="qmP-ba-83G">
-            <objects>
-                <tableViewController id="D1N-HI-asl" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="8Xe-Iz-yfC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SciFiMovieCell" id="kMg-ph-6VW">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kMg-ph-6VW" id="zbP-Qc-juA">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="D1N-HI-asl" id="ZpI-JB-rsK"/>
-                            <outlet property="delegate" destination="D1N-HI-asl" id="lyb-qZ-W6c"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Sci-Fi Movies" id="GPr-DV-GcM"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="I6n-d4-o53" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2695" y="-316"/>
-        </scene>
         <!--Sci-Fi-->
         <scene sceneID="bG3-HS-b98">
             <objects>
@@ -272,12 +212,180 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="D1N-HI-asl" kind="relationship" relationship="rootViewController" id="nhX-Iz-3ma"/>
+                        <segue destination="g43-qo-l6x" kind="relationship" relationship="rootViewController" id="OGG-oK-vcQ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5HA-kb-fOC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1745" y="-316"/>
+        </scene>
+        <!--Sci-Fi Movies-->
+        <scene sceneID="OMR-11-PvK">
+            <objects>
+                <tableViewController id="g43-qo-l6x" customClass="SciFiTableViewController" customModule="My_Favorite_Movies" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ttA-xh-JOC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GenreMovieCell" rowHeight="200" id="O4s-cS-8Ny" customClass="GenreTableViewCell" customModule="My_Favorite_Movies" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="O4s-cS-8Ny" id="TIl-dm-6TB">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PCC-w4-FLN" userLabel="Genre Movie Poster">
+                                            <rect key="frame" x="16" y="11" width="150" height="178"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="XpB-F1-MtZ"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sci-Fi Movie Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUQ-GI-MyX">
+                                            <rect key="frame" x="174" y="11" width="185" height="178"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="PCC-w4-FLN" firstAttribute="bottom" secondItem="TIl-dm-6TB" secondAttribute="bottomMargin" id="I27-db-KES"/>
+                                        <constraint firstItem="HUQ-GI-MyX" firstAttribute="leading" secondItem="PCC-w4-FLN" secondAttribute="trailing" constant="8" symbolic="YES" id="LDA-0R-pez"/>
+                                        <constraint firstItem="PCC-w4-FLN" firstAttribute="bottom" secondItem="HUQ-GI-MyX" secondAttribute="bottom" id="NCC-h6-cFf"/>
+                                        <constraint firstItem="PCC-w4-FLN" firstAttribute="top" secondItem="HUQ-GI-MyX" secondAttribute="top" id="XUN-xh-Fnb"/>
+                                        <constraint firstItem="PCC-w4-FLN" firstAttribute="top" secondItem="TIl-dm-6TB" secondAttribute="topMargin" id="cuj-co-gYr"/>
+                                        <constraint firstItem="PCC-w4-FLN" firstAttribute="leading" secondItem="TIl-dm-6TB" secondAttribute="leadingMargin" id="i3L-cj-FOC"/>
+                                        <constraint firstItem="HUQ-GI-MyX" firstAttribute="trailing" secondItem="TIl-dm-6TB" secondAttribute="trailingMargin" id="r3E-dJ-G8q"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="genreMoviePoster" destination="PCC-w4-FLN" id="EGY-Lx-8IA"/>
+                                    <outlet property="genreMovieTitle" destination="HUQ-GI-MyX" id="iya-RP-CYe"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="g43-qo-l6x" id="6R0-Jl-JKL"/>
+                            <outlet property="delegate" destination="g43-qo-l6x" id="qZT-DQ-0NI"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Sci-Fi Movies" id="NQK-OX-HyQ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DWb-ib-reo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2694" y="-316"/>
+        </scene>
+        <!--Sci-Fi Movies-->
+        <scene sceneID="259-wq-05y">
+            <objects>
+                <tableViewController id="IXJ-HO-Wy7" customClass="ComedyTableViewController" customModule="My_Favorite_Movies" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="D3F-dA-AR3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GenreMovieCell" rowHeight="200" id="p7H-UQ-jG6" customClass="GenreTableViewCell" customModule="My_Favorite_Movies" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p7H-UQ-jG6" id="91D-X0-6Lx">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rbJ-CM-9da" userLabel="Genre Movie Poster">
+                                            <rect key="frame" x="16" y="11" width="150" height="178"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="ib1-g3-YjX"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comedy Movie Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRq-hi-S7L">
+                                            <rect key="frame" x="174" y="11" width="185" height="178"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="rbJ-CM-9da" firstAttribute="bottom" secondItem="91D-X0-6Lx" secondAttribute="bottomMargin" id="3cn-sd-jGc"/>
+                                        <constraint firstItem="gRq-hi-S7L" firstAttribute="leading" secondItem="rbJ-CM-9da" secondAttribute="trailing" constant="8" symbolic="YES" id="41b-p6-yvZ"/>
+                                        <constraint firstItem="rbJ-CM-9da" firstAttribute="leading" secondItem="91D-X0-6Lx" secondAttribute="leadingMargin" id="Yn1-8G-fP0"/>
+                                        <constraint firstItem="rbJ-CM-9da" firstAttribute="bottom" secondItem="gRq-hi-S7L" secondAttribute="bottom" id="ZrX-xf-Tv6"/>
+                                        <constraint firstItem="rbJ-CM-9da" firstAttribute="top" secondItem="gRq-hi-S7L" secondAttribute="top" id="asN-VC-CJo"/>
+                                        <constraint firstItem="gRq-hi-S7L" firstAttribute="trailing" secondItem="91D-X0-6Lx" secondAttribute="trailingMargin" id="jy7-sd-VHt"/>
+                                        <constraint firstItem="rbJ-CM-9da" firstAttribute="top" secondItem="91D-X0-6Lx" secondAttribute="topMargin" id="lQc-wc-bQT"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="genreMoviePoster" destination="rbJ-CM-9da" id="lcW-hc-Un7"/>
+                                    <outlet property="genreMovieTitle" destination="gRq-hi-S7L" id="lMf-fa-fi0"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="IXJ-HO-Wy7" id="EB2-Me-hge"/>
+                            <outlet property="delegate" destination="IXJ-HO-Wy7" id="ue2-6o-z3I"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Sci-Fi Movies" id="GcY-0s-EHZ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VJ2-ys-Uj4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2694" y="566"/>
+        </scene>
+        <!--Favorite Movies-->
+        <scene sceneID="3CM-5p-KXQ">
+            <objects>
+                <tableViewController id="sAh-ME-dWh" customClass="FavoriteTableViewController" customModule="My_Favorite_Movies" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7jG-13-eY3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GenreMovieCell" rowHeight="200" id="lbv-KH-dkN" customClass="GenreTableViewCell" customModule="My_Favorite_Movies" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lbv-KH-dkN" id="R1g-GS-kJc">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fxx-7g-ZQn" userLabel="Genre Movie Poster">
+                                            <rect key="frame" x="16" y="11" width="150" height="178"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="KWX-JZ-9YU"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite Movie Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLQ-ld-PDj">
+                                            <rect key="frame" x="174" y="11" width="185" height="178"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Fxx-7g-ZQn" firstAttribute="leading" secondItem="R1g-GS-kJc" secondAttribute="leadingMargin" id="5TG-ub-qbj"/>
+                                        <constraint firstItem="Fxx-7g-ZQn" firstAttribute="top" secondItem="R1g-GS-kJc" secondAttribute="topMargin" id="7Mu-XO-Mmy"/>
+                                        <constraint firstItem="Fxx-7g-ZQn" firstAttribute="top" secondItem="uLQ-ld-PDj" secondAttribute="top" id="Cah-y8-ZFR"/>
+                                        <constraint firstItem="Fxx-7g-ZQn" firstAttribute="bottom" secondItem="R1g-GS-kJc" secondAttribute="bottomMargin" id="IHZ-K2-ZAo"/>
+                                        <constraint firstItem="uLQ-ld-PDj" firstAttribute="trailing" secondItem="R1g-GS-kJc" secondAttribute="trailingMargin" id="OKT-vn-FXw"/>
+                                        <constraint firstItem="Fxx-7g-ZQn" firstAttribute="bottom" secondItem="uLQ-ld-PDj" secondAttribute="bottom" id="UdS-uX-JPe"/>
+                                        <constraint firstItem="uLQ-ld-PDj" firstAttribute="leading" secondItem="Fxx-7g-ZQn" secondAttribute="trailing" constant="8" symbolic="YES" id="Xrh-zM-mVi"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="genreMoviePoster" destination="Fxx-7g-ZQn" id="MZK-Py-oLF"/>
+                                    <outlet property="genreMovieTitle" destination="uLQ-ld-PDj" id="Aab-B9-fye"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="sAh-ME-dWh" id="VlZ-CT-gIr"/>
+                            <outlet property="delegate" destination="sAh-ME-dWh" id="dl0-fP-rhH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Favorite Movies" id="Rrt-Fq-VE7"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z1S-g7-a8G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2694" y="1405"/>
         </scene>
     </scenes>
 </document>
